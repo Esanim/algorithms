@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/maximelamure/api/common"
+	"github.com/maximelamure/algorithms/common"
 )
 
 func TestIterator(t *testing.T) {

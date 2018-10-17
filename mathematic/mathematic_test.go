@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/maximelamure/algorithms/common"
 	"github.com/maximelamure/algorithms/mathematic"
-	"github.com/maximelamure/api/common"
 )
 
 var helper common.Test = common.Test{}
@@ -45,8 +45,8 @@ func TestFibonacci(t *testing.T) {
 	helper.Assert(t, mathematic.Fibonacci(10) == 55, "Fibonacci 10 should be 55")
 	log.Printf("Fibonacci tooks %v to run.\n", time.Now().Sub(start))
 	start = time.Now()
-	helper.Assert(t, mathematic.FibonacciDyamic(10) == 55, "Fibonacci 10 should be 55")
-	log.Printf("FibonacciDyamic tooks %v to run.\n", time.Now().Sub(start))
+	helper.Assert(t, mathematic.FibonacciDynamic(10) == 55, "Fibonacci 10 should be 55")
+	log.Printf("FibonacciDynamic tooks %v to run.\n", time.Now().Sub(start))
 }
 
 func TestIsPrime(t *testing.T) {

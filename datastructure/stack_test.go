@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/maximelamure/api/common"
+	"github.com/maximelamure/algorithms/common"
 )
 
 func TestStackArray(t *testing.T) {

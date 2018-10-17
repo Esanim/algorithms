@@ -63,7 +63,7 @@ func (g *Graph) String() string {
 	var buffer bytes.Buffer
 	for v, b := range g.Adjacencies {
 		for w := range b.Iterate() {
-			buffer.WriteString(fmt.Sprintf("%s - %s", v, w))
+			buffer.WriteString(fmt.Sprintf("%d - %d", v, w))
 		}
 	}
 	return buffer.String()

@@ -22,9 +22,8 @@ func Min(b int) int {
 func Abs(a int) int {
 	if a < 0 {
 		return -a
-	} else {
-		return a
 	}
+	return a
 }
 
 // MultiplyAddOnly implements a multiplication with only the Add operator
